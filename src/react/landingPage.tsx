@@ -10,6 +10,9 @@ import { AboutSection } from "./components/AboutSection";
 import { WorkSection } from "./components/WorkSection";
 import { ProjectsSection } from "./components/ProjectsSection";
 import { ContactSection } from "./components/ContactSection";
+import { ElixirSection } from "./components/ElixirSection";
+import { ElixirProjects } from "./components/ElixirProjects";
+import { PracticeProjects } from "./components/PracticeProjects";
 
 export default function LandingPage() {
   return (
@@ -23,8 +26,17 @@ function Portfolio() {
   const [currentSection, setCurrentSection] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
   const { currentTheme } = useTheme();
-  const sections = ["intro", "about", "work", "projects", "contact"];
-  
+  const sections = [
+    "intro",
+    "about",
+    "work",
+    "projects",
+    "elixir",
+    "elixirProjects",
+    "practiceProjects",
+    "contact",
+  ];
+
   useEffect(() => {
     let scrollTimeout: NodeJS.Timeout;
 
@@ -108,6 +120,14 @@ function Portfolio() {
           {/* Projects Section */}
           <ProjectsSection />
 
+          {/* Elixir Section */}
+          <ElixirSection />
+
+          {/* Elixir Projects */}
+          <ElixirProjects />
+
+          {/* Practice Projects */}
+          <PracticeProjects />
           {/* Contact Section */}
           <ContactSection />
         </div>

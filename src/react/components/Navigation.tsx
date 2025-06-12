@@ -68,6 +68,36 @@ export const Header = ({
                     : currentTheme.colors.textSecondary
                 }`}
               >
+                Elixir(Backend)
+              </button>
+              <button
+                onClick={() => scrollToSection(5)}
+                className={`transition-colors ${
+                  currentSection === 5
+                    ? `${currentTheme.colors.text} font-medium`
+                    : currentTheme.colors.textSecondary
+                }`}
+              >
+                Elixir Projects
+              </button>
+              <button
+                onClick={() => scrollToSection(6)}
+                className={`transition-colors ${
+                  currentSection === 6
+                    ? `${currentTheme.colors.text} font-medium`
+                    : currentTheme.colors.textSecondary
+                }`}
+              >
+                Practice Projects
+              </button>
+              <button
+                onClick={() => scrollToSection(7)}
+                className={`transition-colors ${
+                  currentSection === 7
+                    ? `${currentTheme.colors.text} font-medium`
+                    : currentTheme.colors.textSecondary
+                }`}
+              >
                 Contact
               </button>
               {/* <a

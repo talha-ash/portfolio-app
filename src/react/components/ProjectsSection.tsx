@@ -1,4 +1,4 @@
-import { cafezupas, cafezupasmobile, qampus, sisu, zimiLife } from "@/assets/images";
+import { cafezupas, cafezupasMobile, qampus, sisu, zimiLife } from "@/assets/images";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/contexts/theme-context";
@@ -43,7 +43,7 @@ const projects = [
     description:
       "A fresh food restaurant chain platform specializing in protein bowls, soups, salads, and sandwiches. Built major item selection and customization module with complex UI for millions of users.",
     image: "restaurant",
-    imageUrl: cafezupasmobile,
+    imageUrl: cafezupasMobile,
     technologies: ["React Native", "TypeScript", "Redux"],
     links: {      
       store: "https://play.google.com/store/apps/details?id=com.cafezupas",
