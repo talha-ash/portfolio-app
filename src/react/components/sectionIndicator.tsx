@@ -15,7 +15,7 @@ export const SectionIndicator = ({
           onClick={() => scrollToSection(index)}
           className={`w-3 h-3 rounded-full border-2 transition-all ${
             currentSection === index
-              ? `bg-gray-900 border-gray-900`
+              ? `bg-teal-400 border-teal-900`
               : `border-gray-400 hover:border-gray-600`
           }`}
         />

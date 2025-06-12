@@ -72,7 +72,7 @@ export const WorkSection = () => {
                   <div className="md:col-span-1">
                     <Badge
                       variant="outline"
-                      className="mb-4 rounded-full text-xs"
+                      className={`mb-4 rounded-full text-xs ${currentTheme.colors.text}`}
                     >
                       {exp.period}
                     </Badge>

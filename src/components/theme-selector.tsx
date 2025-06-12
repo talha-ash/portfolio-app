@@ -43,13 +43,13 @@ export function ThemeSelector() {
                   </div>
                   <div className="flex gap-1">
                     <div
-                      className={`w-4 h-4 rounded ${theme.effects.shape1.replace("/20", "/40").replace("/30", "/40")}`}
+                      className={`w-4 h-4 rounded ${theme.effects.shape1}`}
                     ></div>
                     <div
-                      className={`w-4 h-4 rounded ${theme.effects.shape2.replace("/20", "/40").replace("/30", "/40")}`}
+                      className={`w-4 h-4 rounded ${theme.effects.shape2}`}
                     ></div>
                     <div
-                      className={`w-4 h-4 rounded ${theme.effects.shape3.replace("/20", "/40").replace("/30", "/40")}`}
+                      className={`w-4 h-4 rounded ${theme.effects.shape3}`}
                     ></div>
                   </div>
                 </button>

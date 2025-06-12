@@ -108,8 +108,8 @@ export const AboutSection = () => {
                     {skillGroup.items.map((skill) => (
                       <Badge
                         key={skill}
-                        variant="outline"
-                        className="rounded-full px-4 py-2"
+                        variant="outline"                        
+                        className={`rounded-full px-4 py-2 ${currentTheme.colors.text}`}
                       >
                         {skill}
                       </Badge>

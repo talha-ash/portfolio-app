@@ -24,7 +24,7 @@ function Portfolio() {
   const [isScrolling, setIsScrolling] = useState(false);
   const { currentTheme } = useTheme();
   const sections = ["intro", "about", "work", "projects", "contact"];
-
+  
   useEffect(() => {
     let scrollTimeout: NodeJS.Timeout;
 

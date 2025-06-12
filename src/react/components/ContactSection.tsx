@@ -75,16 +75,19 @@ export const ContactSection = () => {
         </div>
 
         <div className="flex gap-4 justify-center">
-          <Button className="rounded-full px-8 py-3 text-base">
+          {/* <Button className="rounded-full px-8 py-3 text-base">
             <Mail className="mr-2 w-4 h-4" />
             Send Message
-          </Button>
+          </Button> */}
           <Button
             variant="outline"
             className="rounded-full px-8 py-3 text-base"
+            asChild
           >
+            <a href="Talha-Resume.pdf" download>
             <FileText className="mr-2 w-4 h-4" />
             Download Resume
+            </a>
           </Button>
         </div>
 

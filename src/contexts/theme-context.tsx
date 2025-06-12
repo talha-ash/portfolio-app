@@ -163,7 +163,7 @@ export const themes: Theme[] = [
       background: "bg-gray-900",
       surface: "bg-gray-800",
       text: "text-white",
-      textSecondary: "text-gray-300",
+      textSecondary: "text-white",
       border: "border-gray-700",
     },
     effects: {
@@ -189,7 +189,8 @@ type ThemeContextType = {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [currentTheme, setCurrentTheme] = useState<Theme>(themes[3])
+  const randomNunmber =  Math.floor(Math.random() * 7)
+  const [currentTheme, setCurrentTheme] = useState<Theme>(themes[randomNunmber])
 
   useEffect(() => {
     // Load theme from localStorage on mount

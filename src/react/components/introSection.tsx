@@ -4,6 +4,7 @@ import {
   ArrowUpRight,
   Calendar,
   ChevronDown,
+  FileText,
   Mail,
   MapPin,
   Users,
@@ -64,19 +65,22 @@ export const IntroSection = ({
 
         <div className="flex gap-4 justify-center mb-16 animate-fade-in-up-slower">
           <Button
-            onClick={() => scrollToSection(3)}
-            variant="outline"
-            className="rounded-full px-8 py-3 text-base hover:scale-105 transition-transform"
-          >
-            View Work <ArrowUpRight className="ml-2 w-4 h-4" />
-          </Button>
-          <Button
             onClick={() => scrollToSection(4)}
             variant="ghost"
             className="rounded-full px-8 py-3 text-base hover:scale-105 transition-transform"
           >
             <Mail className="mr-2 w-4 h-4" />
             Get in Touch
+          </Button>
+          <Button
+            variant="outline"
+            className="rounded-full px-8 py-3 text-base"
+            asChild
+          >
+            <a href="Talha-Resume.pdf" download>
+              <FileText className="mr-2 w-4 h-4" />
+              Download Resume
+            </a>
           </Button>
         </div>
 
