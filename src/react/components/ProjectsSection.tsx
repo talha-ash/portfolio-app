@@ -173,7 +173,7 @@ export const ProjectsSection = () => {
           </div>
 
           {/* Project Content */}
-          <div className="flex-1 flex items-center justify-center">
+          <div className="flex-1 flex  justify-center">
             {selectedProject ? (
               <div className="max-w-4xl">
                 {(() => {

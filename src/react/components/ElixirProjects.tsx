@@ -1,4 +1,4 @@
-import { consumerVoice } from "@/assets/images";
+import { consumerVoice, recipes } from "@/assets/images";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useTheme } from "@/contexts/theme-context";
@@ -22,8 +22,8 @@ const elixirProjects = [
       "LiveView",
     ],
     links: {
-      github: true,
-      live: true,
+      github: "https://github.com/talha-ash/consumer_voice_mvp",
+      live: "https://consumer-voice-mvp.onrender.com/users/log_in",
     },
     highlights: [
       "Real-time Employee Status",
@@ -32,7 +32,32 @@ const elixirProjects = [
       "Employee Queue System",
     ],
     details:
-      "A real-time call management platform connecting consumers with company employees through voice calls. The system manages employee availability, handles call routing and queuing, and provides robust connection management with automatic reconnection capabilities for dropped calls.Employee availability changes, call queue positions, and connection status are instantly synchronized across all clients.The React client application communicates via WebSocket connections for real-time updates and WebRTC for voice calling. OTP supervision trees ensure system resilience, automatically restarting failed processes and maintaining call state during network interruptions",
+      "A real-time call management platform connecting consumers with company employees through voice calls. The system manages employee availability, handles call routing and queuing, and provides robust connection management with automatic reconnection capabilities for dropped calls.Employee availability changes, call queue positions, and connection status are instantly synchronized across all clients.The React client application communicates via WebSocket connections for real-time updates and WebRTC for voice calling.",
+  },
+  {
+    id: 2,
+    title: "Recipe Kitchen Liveview Application",
+    category: "Phoenix LiveView",
+    image: "chat",
+    imageUrl: recipes,
+    technologies: [
+      "Elixir",
+      "Phoenix",
+      "LiveView",
+      "Tailwind"
+    ],
+    links: {
+      github: "https://github.com/talha-ash/kitchen_recipe",
+      live: false,
+    },
+    highlights: [
+      "LiveView Social App",
+      "Complex Form for Recipe CRUD",
+      "Search & Filter Recipes and Profiles",
+      "Recipe Comment and Like System",
+    ],
+    details:
+      "RecipeShare is a modern social platform for cooking enthusiasts to discover, share, and connect through recipes. Users can create and manage their own recipe collections, follow other cooks, and explore a diverse community of culinary creations through advanced search and filtering capabilities.",
   },
 ];
 
@@ -89,7 +114,7 @@ export const ElixirProjects = () => {
           </div>
 
           {/* Project Content */}
-          <div className="flex-1 flex items-center justify-center">
+          <div className="flex-1 flex justify-center">
             {selectedElixirProject ? (
               <div className="max-w-4xl">
                 {(() => {

@@ -81,7 +81,7 @@ export const PracticeProjects = () => {
           </div>
 
           {/* Project Content */}
-          <div className="flex-1 flex items-center justify-center">
+          <div className="flex-1 flex  justify-center">
             {selectedPracticeProject ? (
               <div className="max-w-4xl">
                 {(() => {

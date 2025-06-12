@@ -57,9 +57,30 @@ export const AnimatedBackground = () => {
         {"<TypeScript />"}
       </div>
       <div
+        className={`absolute bottom-1/2 left-1/2 ${currentTheme.effects.code} font-mono text-sm animate-fade-in-out-delayed`}
+      >
+        {"CleanArchitecture >> TDD"}
+      </div>    
+      <div
         className={`absolute top-2/3 left-1/4 ${currentTheme.effects.code} font-mono text-sm animate-fade-in-out-slow`}
       >
         {"useState()"}
+      </div>
+      <div
+        className={`absolute bottom-7 -left-10/12 ${currentTheme.effects.code} font-mono text-sm animate-fade-in-out-delayed`}
+      >
+        {"Elixir Liveview"}
+      </div>
+
+      <div
+        className={`absolute bottom-32 left-1/12 ${currentTheme.effects.code} font-mono text-sm animate-fade-in-out-delayed`}
+      >
+        {"OTP"}
+      </div>
+      <div
+        className={`absolute top-16 right-1/5 ${currentTheme.effects.code} font-mono text-sm animate-fade-in-out-delayed`}
+      >
+        {"React Native"}
       </div>
     </div>
   );
