@@ -64,9 +64,9 @@ export const WorkSection = () => {
           </h2>
         </div>
 
-        <div className="space-y-20">
+        <div className="space-y-12">
           {experiences.map((exp, index) => (
-            <Card key={index} className="border-0 shadow-none bg-transparent">
+            <Card key={index} className="m border-0 shadow-none bg-transparent">
               <CardContent className="p-0">
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="md:col-span-1">
@@ -101,7 +101,7 @@ export const WorkSection = () => {
 
                   <div className="md:col-span-2">
                     <p
-                      className={`${currentTheme.colors.textSecondary} text-lg leading-relaxed mb-8`}
+                      className={`${currentTheme.colors.textSecondary} text-lg leading-relaxed mb-4`}
                     >
                       {exp.description}
                     </p>
