@@ -132,7 +132,7 @@ export const ElixirProjects = () => {
                       </div>
 
                       <div>
-                        <Badge variant="outline" className="mb-4 rounded-full">
+                        <Badge variant="outline" className={`mb-4 rounded-full ${currentTheme.colors.text}`}>
                           {project.category}
                         </Badge>
                         <h3

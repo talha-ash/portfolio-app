@@ -78,7 +78,7 @@ export const ElixirSection = () => {
               className={`${currentTheme.colors.surface} ${currentTheme.colors.border} border mb-8`}
             >
               <CardContent className="p-8">
-                <Badge variant="outline" className="mb-4 rounded-full text-xs">
+                <Badge variant="outline" className={`mb-4 rounded-full text-xs ${currentTheme.colors.text}`}>
                   {elixirExperience.period}
                 </Badge>
                 <h4
