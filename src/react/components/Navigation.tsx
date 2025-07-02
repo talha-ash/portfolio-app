@@ -22,7 +22,7 @@ export const Header = ({
             <div className="flex gap-8 text-sm">
               <button
                 onClick={() => scrollToSection(0)}
-                className={`transition-colors ${
+                className={`transition-colors cursor-pointer ${
                   currentSection === 0
                     ? `${currentTheme.colors.text} font-medium`
                     : currentTheme.colors.textSecondary
@@ -32,7 +32,7 @@ export const Header = ({
               </button>
               <button
                 onClick={() => scrollToSection(1)}
-                className={`transition-colors ${
+                className={`transition-colors cursor-pointer ${
                   currentSection === 1
                     ? `${currentTheme.colors.text} font-medium`
                     : currentTheme.colors.textSecondary
@@ -42,7 +42,7 @@ export const Header = ({
               </button>
               <button
                 onClick={() => scrollToSection(2)}
-                className={`transition-colors ${
+                className={`transition-colors cursor-pointer ${
                   currentSection === 2
                     ? `${currentTheme.colors.text} font-medium`
                     : currentTheme.colors.textSecondary
@@ -52,7 +52,7 @@ export const Header = ({
               </button>
               <button
                 onClick={() => scrollToSection(3)}
-                className={`transition-colors ${
+                className={`transition-colors cursor-pointer ${
                   currentSection === 3
                     ? `${currentTheme.colors.text} font-medium`
                     : currentTheme.colors.textSecondary
@@ -62,7 +62,7 @@ export const Header = ({
               </button>
               <button
                 onClick={() => scrollToSection(4)}
-                className={`transition-colors ${
+                className={`transition-colors cursor-pointer ${
                   currentSection === 4
                     ? `${currentTheme.colors.text} font-medium`
                     : currentTheme.colors.textSecondary
@@ -72,7 +72,7 @@ export const Header = ({
               </button>
               <button
                 onClick={() => scrollToSection(5)}
-                className={`transition-colors ${
+                className={`transition-colors cursor-pointer ${
                   currentSection === 5
                     ? `${currentTheme.colors.text} font-medium`
                     : currentTheme.colors.textSecondary
@@ -82,7 +82,7 @@ export const Header = ({
               </button>
               <button
                 onClick={() => scrollToSection(6)}
-                className={`transition-colors ${
+                className={`transition-colors cursor-pointer ${
                   currentSection === 6
                     ? `${currentTheme.colors.text} font-medium`
                     : currentTheme.colors.textSecondary
@@ -92,7 +92,7 @@ export const Header = ({
               </button>
               <button
                 onClick={() => scrollToSection(7)}
-                className={`transition-colors ${
+                className={`transition-colors cursor-pointer ${
                   currentSection === 7
                     ? `${currentTheme.colors.text} font-medium`
                     : currentTheme.colors.textSecondary
