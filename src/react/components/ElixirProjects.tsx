@@ -8,7 +8,7 @@ import { useState } from "react";
 const elixirProjects = [
   {
     id: 1,
-    title: "Real-time Chat Application",
+    title: "Real-time Call Application",
     category: "Phoenix LiveView",
     image: "chat",
     imageUrl: consumerVoice,
@@ -28,7 +28,7 @@ const elixirProjects = [
     highlights: [
       "Real-time Employee Status",
       "Call Sync and Rejoined",
-      "Genserber, Registry, Dynamic Supervisor",
+      "Genserver, Registry, Dynamic Supervisor",
       "Employee Queue System",
     ],
     details:
