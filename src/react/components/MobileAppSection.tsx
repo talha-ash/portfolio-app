@@ -1,8 +1,8 @@
 import {
   cafezupas,
-  cafezupasCateringWeb,
-  qampus,
-  zimiLife,
+  cafezupasCateringMobile,
+  cafezupasMobile,
+  sisu,
 } from "@/assets/images";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -19,10 +19,11 @@ const projects = [
     description:
       "A fresh food restaurant chain platform specializing in protein bowls, soups, salads, and sandwiches. Built major item selection and customization module with complex UI for millions of users.",
     image: "restaurant",
-    imageUrl: cafezupas,
-    technologies: ["React", "TypeScript", "Redux"],
+    imageUrl: cafezupasMobile,
+    technologies: ["React Native", "React", "TypeScript", "Redux"],
     links: {
-      live: "https://cafezupas.com",
+      store:
+        "https://apps.apple.com/us/app/caf%C3%A9-zupas-rewards/id6448428217",
     },
     highlights: [
       "Complex item customization interface",
@@ -40,10 +41,10 @@ const projects = [
     description:
       "A fresh food restaurant chain platform specializing in protein bowls, soups, salads, and sandwiches. Built major item selection and customization module with complex UI for millions of users.",
     image: "restaurant",
-    imageUrl: cafezupasCateringWeb,
-    technologies: ["React", "TypeScript", "Redux"],
+    imageUrl: cafezupasCateringMobile,
+    technologies: ["React Native", "TypeScript", "Redux"],
     links: {
-      live: "https://catering.cafezupas.com/",
+      store: "https://play.google.com/store/apps/details?id=com.cafezupas",
     },
     highlights: [
       "Complex item customization interface",
@@ -55,50 +56,29 @@ const projects = [
       "Led the development of a comprehensive food ordering platform that serves millions of customers. The project involved creating a sophisticated item customization system that allows users to build their perfect meal with over 200 premium ingredients. Implemented real-time synchronization between mobile and web platforms, ensuring a seamless experience across all devices.",
   },
   {
-    id: 2,
-    title: "Zimi Smart Home",
-    category: "IoT Platform",
+    id: 4,
+    title: "SISUpro",
+    category: "Mobile Application",
     description:
-      "IoT-based smart home automation platform with light controllers, fan controllers, and dimmer switches. Built comprehensive admin dashboard and customer portal.",
-    image: "iot",
-    imageUrl: zimiLife,
-    technologies: ["React", "TypeScript", "Real-time APIs", "IoT Integration"],
+      "Professional mobile application built with React Native, focusing on user experience and performance optimization.",
+    image: "mobile",
+    imageUrl: sisu,
+    technologies: ["React Native", "TypeScript", "Mobile Optimization"],
     links: {
-      live: "https://zimi.life",
+      store: "https://apps.apple.com/dk/app/sisupro/id1569565460",
     },
     highlights: [
-      "Real-time device monitoring",
-      "Smart home automation",
-      "Complex device management interface",
-      "Customer portal application",
+      "Native mobile experience",
+      "Performance optimized",
+      "Professional UI/UX",
+      "Cross-platform compatibility",
     ],
     details:
-      "Developed a complete IoT ecosystem for smart home automation. Created real-time monitoring dashboards that track device usage and analytics across thousands of connected homes. Built intuitive customer portals where users can schedule, control, and manage all their smart devices with seamless backend synchronization.",
-  },
-  {
-    id: 3,
-    title: "MyQampus",
-    category: "Educational Platform",
-    description:
-      "Comprehensive educational web application providing campus management and student services with modern interface and seamless user experience.",
-    image: "education",
-    imageUrl: qampus,
-    technologies: ["React", "Next.js", "TypeScript", "Modern UI"],
-    links: {
-      live: "https://myqampus.com",
-    },
-    highlights: [
-      "Campus management system",
-      "Student services platform",
-      "Modern educational interface",
-      "Comprehensive feature set",
-    ],
-    details:
-      "Built a comprehensive educational platform that streamlines campus operations and enhances student experience. Developed features for course management, student enrollment, grade tracking, and communication tools. The platform serves multiple educational institutions with a scalable, modern architecture.",
+      "Developed a high-performance mobile application with focus on user experience and native feel. Implemented advanced optimization techniques to ensure smooth performance across different devices. The app features intuitive navigation, offline capabilities, and seamless data synchronization.",
   },
 ];
 
-export const ProjectsSection = () => {
+export const MobileAppSection = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(1);
   const { currentTheme } = useTheme();
   return (
@@ -215,16 +195,16 @@ export const ProjectsSection = () => {
                         </div>
 
                         <div className="flex gap-4">
-                          {project.links.live && (
+                          {project.links.store && (
                             <Button
                               variant="outline"
                               size="sm"
                               className="rounded-full"
                               asChild
                             >
-                              <a href={project.links.live} target="_blank">
-                                <ExternalLink className="w-4 h-4 mr-2" />
-                                Live Site
+                              <a href={project.links.store} target="_blank">
+                                <Smartphone className="w-4 h-4 mr-2" />
+                                App Store
                               </a>
                             </Button>
                           )}

@@ -63,7 +63,7 @@ export const ContactSection = () => {
                 LinkedIn
               </h4>
               <a
-                href="https://www.linkedin.com/in/talha-ashraf-b57818273/"
+                href="https://www.linkedin.com/in/talhase/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`${currentTheme.colors.textSecondary} hover:${currentTheme.colors.text} transition-colors`}
@@ -85,8 +85,8 @@ export const ContactSection = () => {
             asChild
           >
             <a href="Talha-Resume.pdf" download>
-            <FileText className="mr-2 w-4 h-4" />
-            Download Resume
+              <FileText className="mr-2 w-4 h-4" />
+              Download Resume
             </a>
           </Button>
         </div>

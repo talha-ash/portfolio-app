@@ -13,6 +13,7 @@ import { ContactSection } from "./components/ContactSection";
 import { ElixirSection } from "./components/ElixirSection";
 import { ElixirProjects } from "./components/ElixirProjects";
 import { PracticeProjects } from "./components/PracticeProjects";
+import { MobileAppSection } from "./components/MobileAppSection";
 
 export default function LandingPage() {
   return (
@@ -31,6 +32,7 @@ function Portfolio() {
     "about",
     "work",
     "projects",
+    "mobileApps",
     "elixir",
     "elixirProjects",
     "practiceProjects",
@@ -119,6 +121,9 @@ function Portfolio() {
 
           {/* Projects Section */}
           <ProjectsSection />
+
+          {/* Mobile App Projects Section */}
+          <MobileAppSection />
 
           {/* Elixir Section */}
           <ElixirSection />
