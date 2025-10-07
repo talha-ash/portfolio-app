@@ -8,22 +8,48 @@ import { useState } from "react";
 const hobbyProjects = [
   {
     id: 1,
-    title: "Scratch Kitchen App",
-    category: "Recipe Social App",
+    title: "Scratch App",
+    category: "Practice App",
     image: "weather",
     imageUrl: recipes,
-    technologies: ["React", "Typescript", "TDD", "Clean Architecture"],
+    technologies: [
+      "React",
+      "Typescript",
+      "TDD",
+      "Clean Architecture",
+      "Pnpm Workspace",
+      "Github Action",
+    ],
     links: {
       github: "https://github.com/talha-ash/scratch-tdd",
       live: false,
     },
     highlights: [
-      "Build App Follwing TDD",
-      "Architect App Follwing Clean Architecture",
-      "Practice DDD",      
+      "Build App Following TDD and integration tests",
+      "Architect App Following Clean Architecture",
+      "Practice DDD",
+      "Github Action for  linting, testing, cypress",
     ],
     details:
-      "A social platform where users can create, share, and discover recipes while following other cooking enthusiasts. The app features full CRUD operations for recipes, user profiles with follow functionality, and advanced search/filtering capabilities.Built with React 18 and TypeScript, using TanStack Router for type-safe routing and Tailwind CSS for styling. The application follows clean architecture principles with separated domain, infrastructure, and presentation layers. Development follows Test-Driven Development (TDD) using Vitest for unit/integration tests and Cypress for end-to-end testing",
+      "The app features login, registration, session management, some crud form.Built with React 18 and TypeScript, using TanStack Router for type-safe routing and Tailwind CSS for styling. The application follows clean architecture principles with separated domain, infrastructure, and presentation layers. Development follows Test-Driven Development (TDD) using Vitest for unit/integration tests and Cypress for end-to-end testing",
+  }
+  {
+    id: 2,
+    title: "Client Render Optimization",
+    category: "Practice App",
+    technologies: ["React", "Rspack"],
+    links: {
+      github: "https://github.com/talha-ash/client-side-render",
+      live: false,
+    },
+    highlights: [
+      "Build Simple App for practice SPA Optimization",
+      "Efficient Code splitting and Bundling",
+      "Efficient Resource fetching and caching",
+      "Parallel fetching for faster load time",
+    ],
+    details:
+      "The practice app for learning the Optimization for Single Page App.Right now app when open load main js as well as page js and vendor used in current page.Instead of sequence resource fetching. We implement how to Efficiently split code and bundle. Create page specific bundle which include app code as well as vendor code.We utilize rspack, service worker etc",
   },
 ];
 
@@ -94,12 +120,17 @@ export const PracticeProjects = () => {
                         <div
                           className={`aspect-[4/3] rounded-lg flex items-center justify-center mb-8 `}
                         >
-                          <img src={project.imageUrl.src} />
+                          {project.imageUrl ? (
+                            <img src={project.imageUrl.src} />
+                          ) : null}
                         </div>
                       </div>
 
                       <div>
-                        <Badge variant="outline" className={`mb-4 rounded-full ${currentTheme.colors.text}`}>
+                        <Badge
+                          variant="outline"
+                          className={`mb-4 rounded-full ${currentTheme.colors.text}`}
+                        >
                           {project.category}
                         </Badge>
                         <h3
