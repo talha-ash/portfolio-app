@@ -32,7 +32,7 @@ const hobbyProjects = [
     ],
     details:
       "The app features login, registration, session management, some crud form.Built with React 18 and TypeScript, using TanStack Router for type-safe routing and Tailwind CSS for styling. The application follows clean architecture principles with separated domain, infrastructure, and presentation layers. Development follows Test-Driven Development (TDD) using Vitest for unit/integration tests and Cypress for end-to-end testing",
-  }
+  },
   {
     id: 2,
     title: "Client Render Optimization",
